@@ -1,0 +1,20 @@
+body{
+    width: 100vh;
+    height: 100vh;
+    background-image:url(c.png); 
+    background-repeat :no-repeat;
+    background-size: cover;
+}
+form{
+    
+    width: 50vh;
+    height: 50vh;
+    opacity: 80%;
+}
+input{
+    height: 100px;
+    width: 500px;
+}
+label{
+    font-size: 40px;
+}

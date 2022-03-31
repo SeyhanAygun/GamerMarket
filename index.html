@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer Marketi</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body onload="urunleriGetir()">
+    
+    <form action="#" id="market">
+        <h3 class="formBaslik">Gamer Marketi</h3>
+        <label for="kategori" class="aciklama">Ürün kategorileri:</label>
+        <label for="içDonanım">İç Donanım</label>
+        <input type="radio" name="kategori" id="içDonanım" checked>
+        <label for="dışDonanım">Dış Donanım</label>
+        <input type="radio" name="kategori" id="dışDonanım" checked>
+       
+
+        <div id="urunPanel">
+            
+        </div>
+
+        <label for="adet" class="aciklama">Adet seçimi yapınız:</label>
+        <input type="number" name="adet" id="urunAdet" value="1" min="1">
+        <input type="button" value="Sepete Ekle" id="btnEkle" onclick="sepeteEkle()">
+
+        <select name="sepet" id="sepetMarket" size="10">
+            <option value="0">Seçtiğiniz ürünler</option>
+        </select>
+
+        <input type="button" value="Sepetten Çıkar" id="btnCikar" onclick="sepettenCikar()">
+        <input type="button" value="Sepeti Boşalt" id="btnBosalt" onclick="sepetiBosalt()">
+
+        
+        <label for="indirim" class="aciklama">İndirim kodu:</label>
+        <input type="text" name="indirim" id="txtIndirim">
+        <input type="button" value="Kodu Ekle" id="btnKod" onclick="koduEkle()">
+
+        <label for="sepetTutar" class="aciklama">Toplam ödenecek tutar:</label>
+        <h4 id="sepetTutar">0 TL</h4>
+        <a href="a.html"><input type="" value="Tamamla ve Öde" id="btnTamamla"></a>
+
+        <h5 id="sonuc"></h5>
+    </form>
+    <script src="script.js"></script>
+    <p id="bılgı">İletişim Bilgilerimiz: GamerMarket@gmail.com</p>
+</body>
+</html>

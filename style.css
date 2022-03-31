@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 1rem;
+    background: url(images/ekipman.jpg) no-repeat center center/cover;
+}
+form#market{
+    display: grid;
+    gap: 0.4rem;
+    grid-template-columns: 1fr auto 3fr;
+    border: thin solid rgb(99, 237, 255);
+    border-radius: 10px;
+    padding: 0.5rem 7rem 6rem 8rem;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.9;
+}
+form > *{
+    font-family: 'Ubuntu', sans-serif;
+}
+form > label:nth-child(2){
+    grid-column: 1/2;
+    grid-row: 2/6;
+    display: flex;
+    align-items: center;
+}
+form #urunPanel{
+    grid-column: 2/4;
+    grid-row: 5/6;
+}
+#urunPanel > input{
+    margin: 0 1rem 0 0.2rem;
+}
+#urunPanel > label{
+    text-transform:capitalize;
+}
+form #sepetMarket{
+    grid-column: 1/3;
+    grid-row: 7/9;
+}
+form #btnCikar{
+    grid-column: 3/4;
+    grid-row: 7/8;
+}
+form #btnBosalt{
+    grid-column: 3/4;
+    grid-row: 8/9;
+}
+form #sepetTutar{
+    grid-column: 2/3;
+    color: rgb(45, 255, 220);
+}
+.formBaslik{
+    grid-column: 1/4;
+    font-size: 2rem;
+    font-family: 'Acme', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 120px;
+    width: 100%;
+    background: url(images/gamer.jpg) no-repeat center center/20%;
+    border-bottom: thick solid #11cbd1;
+}
+.aciklama{
+    font-weight: bold;
+}
+#bılgı{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: -5rem;
+    margin-right: 30rem;
+    z-index: 1;
+    font-size: 20px;
+}
